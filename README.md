@@ -3,31 +3,31 @@ Este é um projeto de exemplo que contém uma série de exercícios de lógica d
 
 ## Exercícios Incluídos 📝
 O projeto inclui os seguintes exercícios:
-1. **Par ou Ímpar**: Verifica se um número é par ou ímpar.
-2. **Maior de Dois Números**: Identifica o maior entre dois números.
-3. **Calculadora de IMC**: Calcula o Índice de Massa Corporal (IMC).
-4. **Calculadora de Notas**: Calcula a média de notas de um aluno.
-5. **Calculadora de Idade em Dias**: Converte a idade de anos para dias.
-6. **Cálculo de Área**: Calcula a área de um retângulo.
-7. **Troca de Variáveis**: Troca os valores de duas variáveis.
-8. **Ordenação Crescente**: Ordena três números em ordem crescente.
-9. **Bônus Salarial**: Calcula o bônus salarial de um funcionário.
-10. **Conversão de Celsius para Fahrenheit**: Converte temperatura de Celsius para Fahrenheit.
-11. **Conversão de Tempo**: Converte horas e minutos em minutos.
-12. **Validação de Senha**: Verifica se uma senha é válida.
-13. **Média de Notas**: Calcula a média de até 10 notas.
-14. **Maior e Menor de 10 Números**: Identifica o maior e o menor entre 10 números.
-15. **Soma das Idades de 20 Pessoas**: Calcula a soma das idades de 20 pessoas.
-16. **Média das Idades de 20 Pessoas**: Calcula a média das idades de 20 pessoas.
-17. **Número de Pessoas Maiores de Idade**: Conta quantas pessoas são maiores de idade.
-18. **Nome da Pessoa Mais Nova**: Identifica o nome da pessoa mais nova.
-19. **Multiplicação de Dois Números**: Realiza a multiplicação de dois números.
-20. **Potência de um Número**: Calcula a potência de um número.
-21. **Divisão Inteira de Dois Números**: Faz a divisão inteira de dois números.
-22. **Resto da Divisão de Dois Números**: Calcula o resto da divisão de dois números.
-23. **Contagem de Pares e Ímpares**: Conta quantos números pares e ímpares estão em um intervalo.
-24. **Maior e Menor Dentro de Um Intervalo**: Identifica o maior e o menor número dentro de um intervalo.
-25. **Cálculo de Média Ponderada**: Calcula a média ponderada de três notas.
+1. **Calcular Calorias 🥗🍦🥤**
+2. **Verificar Divisibilidade 🔢**
+3. **Calcular Crédito 💳**
+4. **Ordenar em Ordem Decrescente 📉**
+5. **Determinar Classe Eleitoral 🗳️**
+6. **Antecessor, Número, Sucessor 🔄**
+7. **Médias e Soma de Médias 📚**
+8. **Valor Total com IPI 💰**
+9. **Salários Mínimos 💼**
+10. **Saldo com Reajuste 📈**
+11. **Salário Final do Vendedor 💼🏷️**
+12. **Soma dos Números de 1 a 15 🔢**
+13. **Converter Celsius para Fahrenheit 🌡️**
+14. **Soma de 10 Números ➕**
+15. **Soma das Idades de 20 Pessoas 👵👴**
+16. **Média das Idades de 20 Pessoas 🧓🧑**
+17. **Número de Pessoas Maiores de Idade 🎓**
+18. **Nome da Pessoa Mais Nova 🧒👶**
+19. **Conversão de Dólar para Real 💵➡️💰**
+20. **Números Maiores que 8 📊**
+21. **Valor das Prestações 🏦**
+22. **Números entre 0 e 100 🔄**
+23. **Classificar Números em Faixas 🔍**
+24. **Soma de Números (negativo para encerrar) 🤔**
+25. **Soma de Números Positivos 🌟**
 
 ## Como Executar ▶️
 1. Clone o repositório:
