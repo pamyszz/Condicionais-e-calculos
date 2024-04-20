@@ -1,0 +1,242 @@
+:root {
+    /* Cores */
+    --cor-primaria: #781919; /* Bordô */
+    --cor-secundaria: #b70000; /* Tom mais claro de bordô */
+    --cor-hover: #8f2525; /* Tom mais escuro de bordô */
+    --cor-hover-dark: #8f0000; /* Tom mais escuro de bordô */
+    --cor-bg: #f5f5f5; /* Cinza claro */
+    --cor-texto: #333; /* Cinza escuro */
+  
+    /* Espaçamentos */
+    --espacamento-pequeno: 5px;
+    --espacamento-medio: 10px;
+    --espacamento-grande: 20px;
+  
+    /* Fontes */
+    --fonte-open-sans: 'Open Sans', sans-serif;
+    --fonte-poppins: 'Poppins', sans-serif;
+  }
+  
+  /* Reset de Estilos */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--fonte-open-sans);
+    background-color: var(--cor-bg);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    padding: var(--espacamento-grande);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--fonte-poppins);
+    margin-bottom: var(--espacamento-medio);
+    color: var(--cor-primaria);
+  }
+  
+  p {
+    margin-bottom: var(--espacamento-pequeno);
+  }
+  
+  button {
+    font-family: var(--fonte-open-sans);
+    font-weight: 600;
+    cursor: pointer;
+    padding: var(--espacamento-medio) var(--espacamento-grande);
+    margin-top: var(--espacamento-medio);
+    margin-bottom: var(--espacamento-medio);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background-color: var(--cor-hover);
+    transform: scale(1.05);
+  }
+  
+  /* Adicionando a animação de pulso */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  button:hover {
+    animation: pulse 0.5s ease infinite;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: var(--espacamento-grande);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .botoes {
+    margin-bottom: var(--espacamento-grande);
+  }
+  
+  .form {
+    margin-bottom: var(--espacamento-grande);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: var(--espacamento-pequeno);
+    color: var(--cor-primaria);
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: var(--espacamento-pequeno);
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: var(--espacamento-medio);
+  }
+  
+  /* Estilização dos botões de escolha */
+  input[type="radio"] {
+    display: none; /* Esconder o input de rádio padrão */
+  }
+  
+  /* Estilizando o label do botão de escolha */
+  input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: var(--cor-bg);
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  /* Estilizando o label do botão de escolha quando hover */
+  input[type="radio"]:hover + label {
+    background-color: var(--cor-primaria);
+    color: #fff;
+  }
+  
+  /* Estilizando o label do botão de escolha quando está marcado */
+  input[type="radio"]:checked + label {
+    background-color: var(--cor-primaria);
+    color: #fff;
+  }
+  
+  /* Estilizando o label do botão de escolha quando está marcado e hover */
+  input[type="radio"]:checked:hover + label {
+    background-color: var(--cor-hover-dark);
+  }
+  
+  button {
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--cor-hover-dark);
+    transform: scale(1.05);
+  }
+  
+  .resultado {
+    margin-top: var(--espacamento-medio);
+    padding: var(--espacamento-medio);
+    background-color: #f5f5f5;
+    border-left: 4px solid var(--cor-primaria);
+    color: var(--cor-texto);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resultado strong {
+    color: var(--cor-primaria);
+  }
+  
+  /* Formulários */
+  .form {
+    display: none;
+    background-color: #f5f5f5;
+    padding: var(--espacamento-grande);
+    margin-bottom: var(--espacamento-grande);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: var(--espacamento-medio);
+    color: var(--cor-primaria);
+  }
+  
+  .form input[type="number"],
+  .form input[type="text"] {
+    width: 100%;
+    padding: var(--espacamento-pequeno);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: var(--espacamento-medio);
+  }
+  
+  .form button {
+    width: 100%;
+    padding: var(--espacamento-medio);
+    font-size: 16px;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form button:hover {
+    background-color: var(--cor-hover);
+    transform: scale(1.05);
+  }
+  
+  /* Resultados */
+  .resultado {
+    margin-bottom: var(--espacamento-grande);
+    padding: var(--espacamento-grande);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resultado strong {
+    font-weight: bold;
+    color: var(--cor-primaria);
+  }
+  
+  /* Botão com efeito de gradiente */
+  .gradiente-button {
+    background-image: linear-gradient(45deg, var(--cor-primaria), var(--cor-hover-dark));
+  }
+  
+  .gradiente-button:hover {
+    background-image: linear-gradient(45deg, var(--cor-hover-dark), var(--cor-primaria));
+  }
+  
+  

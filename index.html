@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Exercícios JavaScript</h1>
+
+        <!-- Exercício 1: Calcular Calorias -->
+        <div id="ex1" class="exercise">
+            <h2>Exercício 1: Calcular Calorias 🥗🍦🥤</h2>
+            <button onclick="abrirFormulario('ex1')">Executar</button>
+            <div id="ex1_form" class="form" style="display: none;">
+                <label for="prato">Escolha o prato:</label>
+                <select id="prato">
+                    <option value="1">Vegetariano</option>
+                    <option value="2">Peixe</option>
+                    <option value="3">Frango</option>
+                    <option value="4">Carne</option>
+                </select>
+                <br>
+                <label for="sobremesa">Escolha a sobremesa:</label>
+                <select id="sobremesa">
+                    <option value="1">Abacaxi</option>
+                    <option value="2">Sorvete diet</option>
+                    <option value="3">Mousse diet</option>
+                    <option value="4">Mousse chocolate</option>
+                </select>
+                <br>
+                <label for="bebida">Escolha a bebida:</label>
+                <select id="bebida">
+                    <option value="1">Chá</option>
+                    <option value="2">Suco de laranja</option>
+                    <option value="3">Suco de melão</option>
+                    <option value="4">Refrigerante diet</option>
+                </select>
+                <br>
+                <button onclick="calcularCalorias()">Calcular</button>
+            </div>
+            <div id="ex1_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 2: Verificar Divisibilidade -->
+        <div id="ex2" class="exercise">
+            <h2>Exercício 2: Verificar Divisibilidade 🔢</h2>
+            <button onclick="abrirFormulario('ex2')">Executar</button>
+            <div id="ex2_form" class="form" style="display: none;">
+                <label for="numero">Digite um número:</label>
+                <input type="number" id="numero">
+                <br>
+                <button onclick="verificarDivisibilidade()">Verificar</button>
+            </div>
+            <div id="ex2_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 3: Calcular Crédito -->
+        <div id="ex3" class="exercise">
+            <h2>Exercício 3: Calcular Crédito 💳</h2>
+            <button onclick="abrirFormulario('ex3')">Executar</button>
+            <div id="ex3_form" class="form" style="display: none;">
+                <label for="idade">Informe a idade:</label>
+                <input type="number" id="idade">
+                <br>
+                <button onclick="calcularCredito()">Calcular</button>
+            </div>
+            <div id="ex3_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 4: Ordenar em Ordem Decrescente -->
+        <div id="ex4" class="exercise">
+            <h2>Exercício 4: Ordenar em Ordem Decrescente 📉</h2>
+            <button onclick="abrirFormulario('ex4')">Executar</button>
+            <div id="ex4_form" class="form" style="display: none;">
+                <label for="numeros">Digite 3 números:</label>
+                <input type="number" id="numero1">
+                <input type="number" id="numero2">
+                <input type="number" id="numero3">
+                <br>
+                <button onclick="ordenarDecrescente()">Ordenar</button>
+            </div>
+            <div id="ex4_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 5: Determinar Classe Eleitoral -->
+        <div id="ex5" class="exercise">
+            <h2>Exercício 5: Determinar Classe Eleitoral 🗳️</h2>
+            <button onclick="abrirFormulario('ex5')">Executar</button>
+            <div id="ex5_form" class="form" style="display: none;">
+                <label for="idadeEleitor">Informe a idade:</label>
+                <input type="number" id="idadeEleitor">
+                <br>
+                <button onclick="determinarClasseEleitoral()">Verificar</button>
+            </div>
+            <div id="ex5_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 6: Antecessor, Número, Sucessor -->
+        <div id="ex6" class="exercise">
+            <h2>Exercício 6: Antecessor, Número, Sucessor 🔄</h2>
+            <button onclick="abrirFormulario('ex6')">Executar</button>
+            <div id="ex6_form" class="form" style="display: none;">
+                <label for="numeroCentral">Digite um número:</label>
+                <input type="number" id="numeroCentral">
+                <br>
+                <button onclick="antecessorNumeroSucessor()">Calcular</button>
+            </div>
+            <div id="ex6_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 7: Médias e Soma de Médias -->
+        <div id="ex7" class="exercise">
+            <h2>Exercício 7: Médias e Soma de Médias 📚</h2>
+            <button onclick="abrirFormulario('ex7')">Executar</button>
+            <div id="ex7_form" class="form" style="display: none;">
+                <label for="nota1">Nota 1:</label>
+                <input type="number" id="nota1">
+                <br>
+                <label for="nota2">Nota 2:</label>
+                <input type="number" id="nota2">
+                <br>
+                <label for="nota3">Nota 3:</label>
+                <input type="number" id="nota3">
+                <br>
+                <button onclick="calcularMedias()">Calcular</button>
+            </div>
+            <div id="ex7_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 8: Valor Total com IPI -->
+        <div id="ex8" class="exercise">
+            <h2>Exercício 8: Valor Total com IPI 💰</h2>
+            <button onclick="abrirFormulario('ex8')">Executar</button>
+            <div id="ex8_form" class="form" style="display: none;">
+                <label for="valorProduto">Valor do Produto:</label>
+                <input type="number" id="valorProduto">
+                <br>
+                <button onclick="calcularValorTotalIPI()">Calcular</button>
+            </div>
+            <div id="ex8_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 9: Salários Mínimos -->
+        <div id="ex9" class="exercise">
+            <h2>Exercício 9: Salários Mínimos 💼</h2>
+            <button onclick="abrirFormulario('ex9')">Executar</button>
+            <div id="ex9_form" class="form" style="display: none;">
+                <label for="salario">Salário do Funcionário:</label>
+                <input type="number" id="salario">
+                <br>
+                <button onclick="calcularSalariosMinimos()">Calcular</button>
+            </div>
+            <div id="ex9_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 10: Saldo com Reajuste -->
+        <div id="ex10" class="exercise">
+            <h2>Exercício 10: Saldo com Reajuste 📈</h2>
+            <button onclick="abrirFormulario('ex10')">Executar</button>
+            <div id="ex10_form" class="form" style="display: none;">
+                <label for="saldo">Saldo do Cliente:</label>
+                <input type="number" id="saldo">
+                <br>
+                <label for="percentual">Percentual de Reajuste (%):</label>
+                <input type="number" id="percentual">
+                <br>
+                <button onclick="calcularSaldoReajuste()">Calcular</button>
+            </div>
+            <div id="ex10_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 11: Salário Final do Vendedor -->
+        <div id="ex11" class="exercise">
+            <h2>Exercício 11: Salário Final do Vendedor 💼🏷️</h2>
+            <button onclick="abrirFormulario('ex11')">Executar</button>
+            <div id="ex11_form" class="form" style="display: none;">
+                <label for="salarioBase">Salário Base:</label>
+                <input type="number" id="salarioBase">
+                <br>
+                <label for="totalVendas">Total de Vendas:</label>
+                <input type="number" id="totalVendas">
+                <br>
+                <button onclick="calcularSalarioVendedor()">Calcular</button>
+            </div>
+            <div id="ex11_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 12: Soma dos Números de 1 a 15 -->
+        <div id="ex12" class="exercise">
+            <h2>Exercício 12: Soma dos Números de 1 a 15 🔢</h2>
+            <button onclick="abrirFormulario('ex12')">Executar</button>
+            <div id="ex12_form" class="form" style="display: none;">
+                <button onclick="calcularSoma1a15()">Calcular</button>
+            </div>
+            <div id="ex12_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 13: Converter Celsius para Fahrenheit -->
+        <div id="ex13" class="exercise">
+            <h2>Exercício 13: Converter Celsius para Fahrenheit 🌡️</h2>
+            <button onclick="abrirFormulario('ex13')">Executar</button>
+            <div id="ex13_form" class="form" style="display: none;">
+                <label for="celsius">Temperatura em Celsius:</label>
+                <input type="number" id="celsius">
+                <br>
+                <button onclick="converterCelsiusParaFahrenheit()">Converter</button>
+            </div>
+            <div id="ex13_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 14: Soma de 10 Números -->
+        <div class="exercise" id="ex14">
+            <h2>Exercício 14: Soma de 10 números ➕</h2>
+            <label for="numerosEx14">Digite os 10 números separados por vírgula:</label>
+            <input type="text" id="numerosEx14" placeholder="Ex: 1, 2, 3, ...">
+            <button onclick="calcularSoma10Numeros()">Calcular Soma</button>
+            <div class="resultado" id="ex14_resultado"></div>
+        </div>
+
+        <!-- Exercício 15: Soma das Idades de 20 Pessoas -->
+        <div id="ex15" class="exercise">
+            <h2>Exercício 15: Soma das Idades de 20 Pessoas 👵👴</h2>
+            <button onclick="abrirFormulario('ex15')">Executar</button>
+            <div id="ex15_form" class="form" style="display: none;">
+                <label for="idadesEx15">Idades (separadas por vírgula):</label>
+                <input type="text" id="idadesEx15">
+                <button onclick="calcularSomaIdades()">Calcular</button>
+            </div>
+            <div id="ex15_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 16: Média das Idades de 20 Pessoas -->
+      <!-- Exercício 16: Média das Idades de 20 Pessoas -->
+        <div id="ex16" class="exercise">
+            <h2>Exercício 16: Média das Idades de 20 Pessoas 🧓🧑</h2>
+            <button onclick="abrirFormulario('ex16')">Executar</button>
+            <div id="ex16_form" class="form" style="display: none;">
+                <label for="idadesEx16">Idades (separadas por vírgula):</label>
+                <input type="text" id="idadesEx16">
+                <button onclick="calcularMediaIdades()">Calcular</button>
+            </div>
+            <div id="ex16_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 17: Número de Pessoas Maiores de Idade -->
+        <div id="ex17" class="exercise">
+            <h2>Exercício 17: Número de Pessoas Maiores de Idade 🎓</h2>
+            <button onclick="abrirFormulario('ex17')">Executar</button>
+            <div id="ex17_form" class="form" style="display: none;">
+                <label for="idadePessoas">Idades separadas por vírgula:</label>
+                <input type="text" id="idadePessoas">
+                <br>
+                <button onclick="contarPessoasMaioresIdade()">Calcular</button>
+            </div>
+            <div id="ex17_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 18: Nome da Pessoa Mais Nova -->
+        <div id="ex18" class="exercise">
+            <h2>Exercício 18: Nome da Pessoa Mais Nova 🧒👶</h2>
+            <button onclick="abrirFormulario('ex18')">Executar</button>
+            <div id="ex18_form" class="form" style="display: none;">
+                <label for="nomesIdades">Nomes e Idades (separados por vírgula):</label>
+                <input type="text" id="nomesIdades">
+                <br>
+                <button onclick="nomePessoaMaisNova()">Calcular</button>
+            </div>
+            <div id="ex18_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 19: Conversão de Dólar para Real -->
+        <div id="ex19" class="exercise">
+            <h2>Exercício 19: Conversão de Dólar para Real 💵➡️💰</h2>
+            <button onclick="abrirFormulario('ex19')">Executar</button>
+            <div id="ex19_form" class="form" style="display: none;">
+                <label for="valorDolar">Valor em Dólar:</label>
+                <input type="number" id="valorDolar">
+                <br>
+                <button onclick="converterDolarParaReal()">Converter</button>
+            </div>
+            <div id="ex19_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 20: Números Maiores que 8 -->
+        <div id="ex20" class="exercise">
+            <h2>Exercício 20: Números Maiores que 8 📊</h2>
+            <button onclick="abrirFormulario('ex20')">Executar</button>
+            <div id="ex20_form" class="form" style="display: none;">
+                <label for="numerosEx20">Digite 5 números (separados por vírgula):</label>
+                <input type="text" id="numerosEx20">
+                <br>
+                <button onclick="encontrarMaioresQue8()">Verificar</button>
+            </div>
+            <div id="ex20_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 21: Valor das Prestações -->
+        <div id="ex21" class="exercise">
+            <h2>Exercício 21: Valor das Prestações 🏦</h2>
+            <button onclick="abrirFormulario('ex21')">Executar</button>
+            <div id="ex21_form" class="form" style="display: none;">
+                <label for="valorCompra">Valor da Compra:</label>
+                <input type="number" id="valorCompra">
+                <br>
+                <label for="parcelas">Número de Parcelas:</label>
+                <input type="number" id="parcelas">
+                <br>
+                <button onclick="calcularValorPrestacoes()">Calcular</button>
+            </div>
+            <div id="ex21_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 22: Números entre 0 e 100 -->
+        <div id="ex22" class="exercise">
+            <h2>Exercício 22: Números entre 0 e 100 🔄</h2>
+            <button onclick="abrirFormulario('ex22')">Executar</button>
+            <div id="ex22_form" class="form" style="display: none;">
+                <button onclick="exibirNumeros0a100()">Exibir</button>
+            </div>
+            <div id="ex22_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 23: Classificar Números em Faixas -->
+        <div id="ex23" class="exercise">
+            <h2>Exercício 23: Classificar Números em Faixas 🔍</h2>
+            <button onclick="abrirFormulario('ex23')">Executar</button>
+            <div id="ex23_form" class="form" style="display: none;">
+                <label for="numerosFaixas">Digite 3 números (separados por vírgula):</label>
+                <input type="text" id="numerosFaixas">
+                <br>
+                <button onclick="classificarNumerosFaixas()">Classificar</button>
+            </div>
+            <div id="ex23_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 24: Soma de Números (negativo para encerrar) -->
+        <div id="ex24" class="exercise">
+            <h2>Exercício 24: Soma de Números (negativo para encerrar) 🤔</h2>
+            <button onclick="abrirFormulario('ex24')">Executar</button>
+            <div id="ex24_form" class="form" style="display: none;">
+                <label for="numerosSomaNeg">Digite os números (negativo para encerrar):</label>
+                <input type="text" id="numerosSomaNeg">
+                <br>
+                <button onclick="somaNumerosNegativo()">Calcular</button>
+            </div>
+            <div id="ex24_resultado" class="resultado"></div>
+        </div>
+
+        <!-- Exercício 25: Soma de Números Positivos -->
+        <div id="ex25" class="exercise">
+            <h2>Exercício 25: Soma de Números Positivos 🌟</h2>
+            <button onclick="abrirFormulario('ex25')">Executar</button>
+            <div id="ex25_form" class="form" style="display: none;">
+                <label for="numerosSomaPos">Números positivos (separados por vírgula):</label>
+                <input type="text" id="numerosSomaPos">
+                <button onclick="somaNumerosPositivos()">Calcular</button>
+            </div>
+            <div id="ex25_resultado" class="resultado"></div>
+        </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
