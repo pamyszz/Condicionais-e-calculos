@@ -3,31 +3,31 @@ Este é um projeto de exemplo que contém uma série de exercícios de lógica d
 
 ## Exercícios Incluídos 📝
 O projeto inclui os seguintes exercícios:
-1. **Calcular Calorias 🥗🍦🥤**
-2. **Verificar Divisibilidade 🔢**
-3. **Calcular Crédito 💳**
-4. **Ordenar em Ordem Decrescente 📉**
-5. **Determinar Classe Eleitoral 🗳️**
-6. **Antecessor, Número, Sucessor 🔄**
-7. **Médias e Soma de Médias 📚**
-8. **Valor Total com IPI 💰**
-9. **Salários Mínimos 💼**
-10. **Saldo com Reajuste 📈**
-11. **Salário Final do Vendedor 💼🏷️**
-12. **Soma dos Números de 1 a 15 🔢**
-13. **Converter Celsius para Fahrenheit 🌡️**
+1. **Calcular Calorias**
+2. **Verificar Divisibilidade**
+3. **Calcular Crédito**
+4. **Ordenar em Ordem Decrescente**
+5. **Determinar Classe Eleitoral**
+6. **Antecessor, Número, Sucessor**
+7. **Médias e Soma de Médias**
+8. **Valor Total com IPI**
+9. **Salários Mínimos**
+10. **Saldo com Reajuste**
+11. **Salário Final do Vendedor**
+12. **Soma dos Números de 1 a 15**
+13. **Converter Celsius para Fahrenheit**
 14. **Soma de 10 Números ➕**
-15. **Soma das Idades de 20 Pessoas 👵👴**
-16. **Média das Idades de 20 Pessoas 🧓🧑**
-17. **Número de Pessoas Maiores de Idade 🎓**
-18. **Nome da Pessoa Mais Nova 🧒👶**
-19. **Conversão de Dólar para Real 💵➡️💰**
-20. **Números Maiores que 8 📊**
-21. **Valor das Prestações 🏦**
-22. **Números entre 0 e 100 🔄**
-23. **Classificar Números em Faixas 🔍**
-24. **Soma de Números (negativo para encerrar) 🤔**
-25. **Soma de Números Positivos 🌟**
+15. **Soma das Idades de 20 Pessoas**
+16. **Média das Idades de 20 Pessoas**
+17. **Número de Pessoas Maiores de Idade**
+18. **Nome da Pessoa Mais Nova**
+19. **Conversão de Dólar para Real**
+20. **Números Maiores que 8**
+21. **Valor das Prestações**
+22. **Números entre 0 e 100**
+23. **Classificar Números em Faixas**
+24. **Soma de Números (negativo para encerrar)**
+25. **Soma de Números Positivos**
 
 ## Como Executar ▶️
 1. Clone o repositório:
