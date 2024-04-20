@@ -62,6 +62,3 @@ Se você deseja contribuir com mais exercícios ou melhorias nos existentes, sig
 5. Push para a branch: `git push origin minha-feature`.
 6. Abra um Pull Request.
 
-## Licença 📜
-
-Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
